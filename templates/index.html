@@ -1,0 +1,137 @@
+{% extends "base1.html" %}
+{% block body_block %}
+{% load static %}
+    <!-- banner part start-->
+    <section class="banner_part">
+        <div class="container">
+            <div class="row mt-ng align-items-center">
+                <div class="col-lg-7">
+                    <div class="banner_text">
+                        <div class="banner_text_iner">
+                            <h1>Drive More Customers
+                                Through Digital</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam.</p>
+                            <a href="#" class="btn_2 banner_btn_1">Get Started </a>
+                            {% if user.is_anonymous%}
+                            <a href="{% url 'user:register' %}" class="btn_2 banner_btn_2">Sign up for free </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="banner_img d-none d-lg-block">
+                        <img src="{% static 'img/banner_img.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner part start-->
+
+  
+    <!-- upcoming_event part start-->
+
+    <!-- about_us part start-->
+    <section class="about_us section_padding">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-6 col-lg-5">
+                    <div class="about_us_text">
+                        <h2>Right people at the
+                            Right time.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim</p>
+                        <a href="#" class="btn_1">get started</a>
+                        {% if user.is_anonymous%}
+                            <a href="{% url 'user:register' %}" class="btn_2 banner_btn_2">Sign up for free </a>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="learning_img">
+                        <img src="{% static 'img/about_img.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="{% static 'img/left_sharp.png' %}" alt="" class="left_shape_1">
+        <img src="{% static 'img/about_shape.png' %}" alt="" class="about_shape_1">
+        <img src="{% static 'img/animate_icon/Shape-16.png' %}" alt="" class="feature_icon_1">
+        <img src="{% static 'img/animate_icon/Shape-1.png' %}" alt="" class="feature_icon_4">
+    </section>
+    <!-- about_us part end-->
+
+    <!-- use sasu part end-->
+    <section class="use_sasu">
+        <div class="container pb-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section_tittle text-center">
+                        <h2>Who can use CaaS?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Quis ipsum suspendisse ultrices </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single_feature">
+                        <div class="single_feature_part">
+                            <img src="{% static 'img/icon/feature_icon_1.png' %}" alt="">
+                            <h4>Businesses</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single_feature">
+                        <div class="single_feature_part">
+                            <img src="{% static 'img/icon/feature_icon_2.png' %}" alt="">
+                            <h4>Companies</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single_feature">
+                        <div class="single_feature_part">
+                            <img src="{% static 'img/icon/feature_icon_3.png' %}" alt="">
+                            <h4>Universities</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="{% static 'img/animate_icon/Shape-10.png' %}" alt="" class="feature_icon_2">
+        <img src="{% static 'img/animate_icon/Shape.png' %}" alt="" class="feature_icon_3">
+        <img src="{% static 'img/animate_icon/shape-13.png' %}" alt="" class="feature_icon_4">
+    </section>
+    <!-- use sasu part end-->
+
+    <!-- cta part start-->
+    <section class="cta_part section_padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-6">
+                    <div class="cta_text text-center">
+                        <h2>Very useful &amp; Friendly</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo</p>
+                        <a href="#" class="btn_2 banner_btn_1">Get Started </a>
+                        {% if user.is_anonymous%}
+                            <a href="{% url 'user:register' %}" class="btn_2 banner_btn_2">Sign up for free </a>
+                        {% endif %}
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- cta part end-->
+
+{% endblock %}
